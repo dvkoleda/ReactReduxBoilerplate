@@ -8,7 +8,8 @@ const ACTION_TYPE = 'ACTION_TYPE';
 
 //reduce function
 export default function reduce(state = [], action) {
-    return actionsMap[action](state, action) || state;
+    const reactOnAction = actionsMap[action.type];
+    return reactOnAction ? reactOnAction(state, action) : state;
 }
 
 //action creators
