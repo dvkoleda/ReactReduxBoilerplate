@@ -13,7 +13,7 @@ export default function reduce(state = [], action) {
 }
 
 //action creators
-export function fetchWeather(city) {
+export function someActionCreator() {
     return {
         type: ACTION_TYPE,
         payload: {}
@@ -21,5 +21,5 @@ export function fetchWeather(city) {
 }
 
 const actionsMap = {
-    FETCH_WEATHER : (state, action) => state
+    ACTION_TYPE : (state, action) => state
 };
