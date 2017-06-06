@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/dvkoleda/ReactReduxBoilerplate.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js -devtool true",
     "test:watch": "npm run test -- --watch"
   },
   "author": "",
