@@ -7,7 +7,7 @@ import weatherService from '../services/weather-service';
 const ACTION_TYPE = 'ACTION_TYPE';
 
 //reduce function
-export default function reduce(state = [], action) {
+export default function reduce(state = {}, action) {
     const reactOnAction = actionsMap[action.type];
     return reactOnAction ? reactOnAction(state, action) : state;
 }
